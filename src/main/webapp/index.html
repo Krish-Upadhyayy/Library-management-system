@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LibraryHub Library Management System">
+  <title>LibraryHub | Library Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header style="background: #14213d; color: white; padding: 28px 20px;">
+  <div style="max-width: 1200px; margin: auto;">
+    <div style="font-size: 18px; font-weight: 750;">📚 LibraryHub</div>
+    <h1 style="color: white; margin-top: 26px; margin-bottom: 10px;">
+      Library Management System
+    </h1>
+    <p style="color: #cbd5e1; margin: 0;">
+      A simpler way to manage books, members and library transactions.
+    </p>
+  </div>
+</header>
+
+<main class="page-container">
+
+  ```
+  <div class="page-header">
+    <div>
+      <h2>Library Overview</h2>
+      <p>Choose a task to get started.</p>
+    </div>
+    <a href="login.html" class="button">Sign In →</a>
+  </div>
+
+  <section style="margin-bottom: 32px;">
+    <h2>Book Management</h2>
+
+    <div style="display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+                gap: 20px;">
+
+      <article class="card">
+        <div style="font-size: 30px;">📚</div>
+        <h3 style="margin-top: 14px;">Add a Book</h3>
+        <p>Add a new book to the library catalogue.</p>
+        <a href="add-book.html" class="button">Add Book →</a>
+      </article>
+
+      <article class="card">
+        <div style="font-size: 30px;">🔎</div>
+        <h3 style="margin-top: 14px;">Browse Books</h3>
+        <p>View the catalogue and check book availability.</p>
+        <a href="books" class="button">View Books →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section style="margin-bottom: 32px;">
+    <h2>Member Management</h2>
+
+    <div style="display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+                gap: 20px;">
+
+      <article class="card">
+        <div style="font-size: 30px;">👤</div>
+        <h3 style="margin-top: 14px;">Add a Member</h3>
+        <p>Register a new library member.</p>
+        <a href="add-member.html" class="button">Add Member →</a>
+      </article>
+
+      <article class="card">
+        <div style="font-size: 30px;">👥</div>
+        <h3 style="margin-top: 14px;">View Members</h3>
+        <p>Access the library member directory.</p>
+        <a href="members" class="button">View Members →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section style="margin-bottom: 32px;">
+    <h2>Book Issue & Return</h2>
+
+    <div style="display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+                gap: 20px;">
+
+      <article class="card">
+        <div style="font-size: 30px;">📖</div>
+        <h3 style="margin-top: 14px;">Issue a Book</h3>
+        <p>Record a book issue for a registered member.</p>
+        <a href="issue-book.html" class="button">Issue Book →</a>
+      </article>
+
+      <article class="card">
+        <div style="font-size: 30px;">↩️</div>
+        <h3 style="margin-top: 14px;">Return a Book</h3>
+        <p>Process a return and update availability.</p>
+        <a href="return-book.html" class="button">Return Book →</a>
+      </article>
+
+      <article class="card">
+        <div style="font-size: 30px;">📋</div>
+        <h3 style="margin-top: 14px;">Issued Books & Fines</h3>
+        <p>Review issued books and applicable fines.</p>
+        <a href="issue-book" class="button">View Issued Books →</a>
+      </article>
+
+    </div>
+  </section>
+
+
+</main>
+
+<footer style="text-align: center; padding: 24px;">
+  <p style="font-size: 13px;">
+    LibraryHub · Built with Java, Hibernate and MySQL
+  </p>
+</footer>
+
+</body>
+</html>

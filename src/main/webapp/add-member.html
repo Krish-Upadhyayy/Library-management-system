@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Member | LibraryHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<aside class="sidebar">
+    <div class="sidebar-brand">📚 LibraryHub</div>
+
+    ```
+    <p style="color: #94a3b8; padding-left: 13px; font-size: 12px;">
+        ADMINISTRATION
+    </p>
+
+    <a href="admin-dashboard.html">▦ Dashboard</a>
+    <a href="books">▤ Manage Books</a>
+    <a href="members" class="active">♙ Manage Members</a>
+    <a href="issue-book">↗ Issue Books</a>
+    <a href="return-book">↩ Return Books</a>
+    <a href="borrowing-history">◷ Borrowing History</a>
+
+    <div style="margin-top: auto;">
+        <form action="logout" method="post">
+            <button type="submit" style="width: 100%; background: #263957;">
+                ⇥ Logout
+            </button>
+        </form>
+    </div>
+
+
+</aside>
+
+<main class="main-content">
+    <div class="page-container">
+
+        <header class="page-header">
+            <div>
+                <p style="margin-bottom: 5px;">MEMBER MANAGEMENT / REGISTRATION</p>
+                <h1>Add Library Member</h1>
+                <p>Register an existing user as a library member.</p>
+            </div>
+
+            <a href="members" class="button"
+               style="background: white; color: var(--navy);
+                  border-color: var(--border);">
+                ← View Members
+            </a>
+        </header>
+
+        <section class="card" style="max-width: 760px;">
+
+            <div style="margin-bottom: 24px;">
+                <h2>Member Information</h2>
+                <p>Enter the user and membership details below.</p>
+            </div>
+
+            <form action="add-member" method="post">
+
+                <label for="userId">Existing User ID</label>
+                <input
+                        type="number"
+                        id="userId"
+                        name="userId"
+                        min="1"
+                        placeholder="Enter an existing user ID"
+                        required
+                >
+                <p style="font-size: 13px; margin-top: -8px;">
+                    Use the ID of a user already registered in the system.
+                </p>
+
+                <label for="membershipId">Membership ID</label>
+                <input
+                        type="text"
+                        id="membershipId"
+                        name="membershipId"
+                        placeholder="Enter membership ID"
+                        maxlength="50"
+                        required
+                >
+
+                <label for="phone">Phone Number</label>
+                <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter phone number"
+                        autocomplete="tel"
+                        maxlength="20"
+                        required
+                >
+
+                <label for="address">Address</label>
+                <textarea
+                        id="address"
+                        name="address"
+                        rows="4"
+                        placeholder="Enter complete address"
+                        maxlength="500"
+                        required
+                ></textarea>
+
+                <div style="display: flex; gap: 12px; flex-wrap: wrap;
+                        margin-top: 18px;">
+                    <button type="submit">＋ Add Member</button>
+
+                    <a href="admin-dashboard.html" class="button"
+                       style="background: white; color: var(--navy);
+                          border-color: var(--border);">
+                        Cancel
+                    </a>
+                </div>
+
+            </form>
+        </section>
+
+        <footer style="margin-top: 32px; text-align: center;">
+            <p style="font-size: 13px;">LibraryHub · Member Management</p>
+        </footer>
+
+    </div>
+
+
+</main>
+
+</body>
+</html>

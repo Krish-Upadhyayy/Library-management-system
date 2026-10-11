@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | LibraryHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="auth-container">
+
+  <section class="auth-card">
+
+    <div style="text-align: center; margin-bottom: 28px;">
+      <div style="font-size: 46px; margin-bottom: 10px;">📚</div>
+      <h1 style="margin-bottom: 8px;">LibraryHub</h1>
+      <p style="margin-top: 0;">Library Management System</p>
+    </div>
+
+    <h2>Welcome back</h2>
+    <p style="margin-top: -8px; margin-bottom: 26px;">
+      Sign in to access your library account.
+    </p>
+
+    <form action="login" method="post">
+
+      <label for="email">Email address</label>
+      <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              autocomplete="username"
+              required
+      >
+
+      <label for="password">Password</label>
+      <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              autocomplete="current-password"
+              required
+      >
+
+      <button type="submit" style="width: 100%; margin-top: 10px;">
+        Sign In →
+      </button>
+
+    </form>
+
+    <div style="margin-top: 24px; padding-top: 18px;
+                border-top: 1px solid var(--border);
+                text-align: center;">
+      <p style="font-size: 13px; margin-bottom: 0;">
+        Secure access to your library account
+      </p>
+    </div>
+
+  </section>
+
+  <p style="font-size: 13px; margin-top: 20px; text-align: center;">
+    LibraryHub · Library Management System
+  </p>
+
+
+</main>
+
+</body>
+</html>
