@@ -10,6 +10,8 @@
 
 A full-stack, enterprise-grade **Library Management System** built with **Java 17**, **Jakarta Servlets**, **Hibernate ORM**, and **MySQL**, designed to run on **Apache Tomcat 10.1.x**.
 
+Live- https://library-management-system-g6kt.onrender.com
+
 The application offers complete end-to-end automation for modern libraries—featuring role-based dashboards (Admin & Member), book inventory tracking, member profile management, dynamic borrowing & return workflows, automated stock counter adjustments, and overdue fine calculations.
 
 ---
